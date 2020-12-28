@@ -1,16 +1,24 @@
 # HapGloves
 <b>Vibrotactile Gloves for 3D Interaction</b>
 
-This haptic device provides feedback with an LRA motor spinning at a resonant frequency of  200Hz  while variating the intensity from  level 0 to 128, and controlled by a dedicated haptic driver supporting overdriving and active braking. The device can also be configured to provide different vibrotactile patterns according to the task in execution. It is also possible to attach an IR marker and enable position tracking with external cameras and use the pressure sensure in the fingertip to design tabletop-based interaction techniques. As additional input, the device features two tactile buttons and an analog joystick wich can be easily accesed with the thumb.
+The HapGloves are a pair of gloves for 3D interaction. They rely on hand tracking (i.e., Leap Motion) to provide vibrotactile feedback on fingers and palm surface. The device contains 14 LRA actuators (PMC10-100)[1] for each hand, driven independently with PWM signals and managed wirelessly from the computer using Bluetooth Low Energy technology. 
+All the electronics and power sources are enclosed in a fore-arm band, offering freedom of movement and comfort for common hand-interaction tasks in VR environments.
+The actuators are controlled by an Adafruit 16-channel 12-bit pulse width modulation (PWM) driver[2]. A self-made circuit board organizes the connections, provides signal enhancements (including amplifying, basic active breaking, and basic overdriving), and fits directly onto the PWM driver. 
+Each glove is powered by a 3.7V lithium polymer ion (LiPo) rechargeable battery. 
+To mount the circuitry around the arm, all the components are installed in a 3D-printed case, which can be attached to a neoprene arm belt.
+
+<p align="center"><img src="Media/glove1.png" width="50%"></p>
+
+This repository contains the necessary files to build a new device; model files for 3D printing, schematics for electronics, and embedded/testing code.
 
 <p align="center"><img src="Media/device.png" width="50%"></p>
 
-This repository contains all the necessary files to build a new device; model files for 3D printing, schematics for electronics, embedded software binaries, source code of a BLE server to stablish a wireless device connection from a computer and the source code of an Unity demo application featuring vibrotactile feedback in a 3D environment.
+Inducing Body-Transfer Illusions in VR by Providing Brief Phases of Visual-Tactile Stimulation<br/>
+Oscar Ariza, Jann Freiwald, Nadine Laage, Michaela Feist, Mariam Salloum, Gerd Bruder, Frank Steinicke<br/>
+Proceedings of the ACM Symposium on Spatial User Interaction<br/>
+2016
 
-<p align="center"><img src="Media/app.png" width="50%"></p>
+[1] http://www.precisionmicrodrives.com/
+[2] https://www.adafruit.com/product/815
 
-The demo application requires a LeapMotion device to track the position of the hand and provide vibrotactile feedback whenever the index fingertip touches the objects in the 3D scene; the intensity of the feedback depends on the material properties (👉⬛️).
 
-<p align="center"><img src="Media/touchscreen.png" width="50%"></p>
-
-The device can also be used for touchscreen/tabletop interactions as can bee depicted above (HapRing, also built in our Lab); the vibrotactile feedback can be changed dinamically, according to the visual texture being touch on the screen.
