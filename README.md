@@ -1,5 +1,5 @@
-# HapFinger
-<b>Vibrotactile Fingercap for Wireless Tabletop/3D Interaction</b>
+# HapGloves
+<b>Vibrotactile Gloves for 3D Interaction</b>
 
 This haptic device provides feedback with an LRA motor spinning at a resonant frequency of  200Hz  while variating the intensity from  level 0 to 128, and controlled by a dedicated haptic driver supporting overdriving and active braking. The device can also be configured to provide different vibrotactile patterns according to the task in execution. It is also possible to attach an IR marker and enable position tracking with external cameras and use the pressure sensure in the fingertip to design tabletop-based interaction techniques. As additional input, the device features two tactile buttons and an analog joystick wich can be easily accesed with the thumb.
 
