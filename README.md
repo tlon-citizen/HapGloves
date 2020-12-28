@@ -18,7 +18,7 @@ Oscar Ariza, Jann Freiwald, Nadine Laage, Michaela Feist, Mariam Salloum, Gerd B
 Proceedings of the ACM Symposium on Spatial User Interaction<br/>
 2016
 
-[1] http://www.precisionmicrodrives.com/
+[1] http://www.precisionmicrodrives.com/<br>
 [2] https://www.adafruit.com/product/815
 
 
